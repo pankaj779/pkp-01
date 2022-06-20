@@ -1,4 +1,3 @@
 #!/bin/bash
 cd /home/ubuntu/node-express-realworld-example-app
-sudo pm2 start app.js
-sudo pm2 stop app.js
+pm2 stop app.js
