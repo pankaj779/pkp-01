@@ -9,7 +9,7 @@ hooks:
    ApplicationStop:
      - location: scripts/stop_script.sh
        timeout: 30
-       runas: root
+       
    ApplicationStart:
      - location: scripts/start_script.sh
        timeout: 30
