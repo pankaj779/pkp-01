@@ -8,8 +8,6 @@ env:
 
 phases:
 
-    commands:
-      - echo Installing...
   pre_build:
     commands:
       - echo Installing source NPM dependencies.
