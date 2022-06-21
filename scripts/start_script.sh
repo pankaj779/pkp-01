@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/ubuntu/node-express-realworld-example-app
-sudo pm2 start app.js -f
+sudo pm2 start -f app.js 
