@@ -4,6 +4,8 @@ runas: root
 files:
   - source: /
     destination: /home/ubuntu/node-express-realworld-example-app/
+    overwrite: true
+file_exists_behavior: OVERWRIT
    
 hooks:
    ApplicationStop:
