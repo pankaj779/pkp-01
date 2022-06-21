@@ -7,9 +7,7 @@ env:
     a: "/pankaj/mongo-url"
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 12
+
     commands:
       - echo Installing...
   pre_build:
