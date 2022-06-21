@@ -12,6 +12,6 @@ if [ "${RUNNING}" -ne 0 ]; then
 else
         echo "APP IS RUNNING"
         echo "APP WILL BE TERMINIATED"
-        sudo pm2 stop app.js
+        sudo pm2 kill
 fi;
 
