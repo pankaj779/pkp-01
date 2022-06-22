@@ -10,11 +10,12 @@ phases:
 
   pre_build:
     commands:
-      - echo Installing source NPM dependencies.
-      - npm install
+      - echo PANKAJ_URI = $a > .env
+      
   build:
     commands:
-      - echo PANKAJ_URI = $a > .env
+      - echo Installing source NPM dependencies.
+      - npm install
       - echo Building ...
 
   post_build:
