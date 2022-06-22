@@ -14,7 +14,7 @@ phases:
       
       - sed -i 's/localhost/'$a'/' app.js
       
-      - sed -i 's/conduit/'$b'/2' app.js
+      - sed -i '36 s/conduit/'$b'/' app.js
       
       - echo Installing source NPM dependencies.
       
