@@ -14,7 +14,7 @@ phases:
       - npm install
   build:
     commands:
-      - sed -i 's+mongodb://localhost/conduit+'$a'+' app.js
+      - echo PANKAJ_URI = $a > .env
       - echo Building ...
 
   post_build:
