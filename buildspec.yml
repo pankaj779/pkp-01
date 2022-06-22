@@ -10,19 +10,22 @@ phases:
 
   pre_build:
     commands:
-      - echo MONGODB_URI = $a > .env
+    
+      - echo Installing source NPM dependencies.
+      - npm install
       
   build:
     commands:
-      - echo Installing source NPM dependencies.
-      - npm install
-      - echo Building ...
+    
+      - sed -i 's|mongodb://localhost/conduit|'$a'|' app.js
+      
+      - echo App Building in process
 
   post_build:
     commands:
-      - echo Build complete
+      - echo App Build is completed
 
 artifacts:
   files:
     - '**/*'
-    - echo Uploaded Artifacts
+    - echo Uploaded Artifacts in S3
