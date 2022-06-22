@@ -1,6 +1,6 @@
 version: 0.2
 
-run-as: root
+run-as: ubuntu
 
 env:
   parameter-store:
@@ -10,7 +10,7 @@ phases:
 
   pre_build:
     commands:
-      - sed -i 's/mongodb localhost conduit/'$a'/' app.js
+      - sed -i 's/mongodb:\/\/localhost\/conduit/g'$a'/' app.js
       
       - echo Installing source NPM dependencies.
       
