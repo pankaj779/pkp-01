@@ -33,7 +33,7 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect(process.env.PANKAJ_URI);
+  mongoose.connect('pankaj');
   mongoose.set('debug', true);
 }
 
