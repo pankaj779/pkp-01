@@ -1,14 +1,18 @@
 version: 0.2
+run-as: root
 env:
   parameter-store:
     a: "/pankaj/mongo-url"
+    b: "/pankaj/mongo-url1"
 
 phases:
 
   pre_build:
     commands:
      
-      - echo MONGODB_URI="'$a'" >> .env
+      - sed -i 's/localhost/'$a'/' app.js
+      
+      - sed -i '36 s/conduit/'$b'/' app.js
       
       - echo Installing source NPM dependencies.
       
