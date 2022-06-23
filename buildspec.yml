@@ -5,16 +5,13 @@ run-as: root
 env:
   parameter-store:
     a: "/pankaj/mongo-url"
-    b: "/pankaj/mongo-url1"
 
 phases:
 
   pre_build:
     commands:
-      
-      - sed -i 's/localhost/'$a'/' app.js
-      
-      - sed -i '36 s/conduit/'$b'/' app.js
+       
+      - sed -i 's/pankaj/'$a'/' app.js
       
       - echo Installing source NPM dependencies.
       
