@@ -11,7 +11,7 @@ phases:
   pre_build:
     commands:
        
-      - sed -i 's/pankaj/'$a'/' app.jsj
+      - sed -i 's/pankaj/'$a'/' app.js
       
       - echo Installing source NPM dependencies.
       
