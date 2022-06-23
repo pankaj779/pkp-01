@@ -10,7 +10,8 @@ phases:
 
   pre_build:
     commands:
-      - sed -i 's/pankaj/'$a'/' app.js
+     
+      - echo PANKAJ_URI="'a'" >> .env
       
       - echo Installing source NPM dependencies.
       
