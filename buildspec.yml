@@ -3,7 +3,6 @@ run-as: root
 env:
   parameter-store:
     a: "/pankaj/mongo-url"
-    b: "/pankaj/mongo-url1"
 
 phases:
 
