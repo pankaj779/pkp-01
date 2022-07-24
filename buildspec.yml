@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
      
-      - sed -i 's/localhost/'$a'/' app.js
+      - sed -i 's|localhost|'$a'|' app.js
       
       - sed -i 's|localhost|\&|' app.js
       
